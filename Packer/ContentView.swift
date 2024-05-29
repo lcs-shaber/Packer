@@ -38,97 +38,111 @@ struct ContentView: View {
                 HStack {
                    
                     
+                    VStack{
+                        
+                        //         CalendarListView(
+                        //             reminders: "Monday",
+                        //           rectangleColour: .pink,
+                        //            textColor: .white
+                        //        )
+                        //
+                        //        CalendarListView(
+                        //             reminders: "Tuesday",
+                        //               rectangleColour: .pink,
+                        //                textColor: .white
+                        //            )
+                        //
+                        //             CalendarListView(
+                        //                  reminders: "Wednesday",
+                        //                  rectangleColour: .pink,
+                        //                   textColor: .white
+                        //               )
+                        //
+                        //                CalendarListView(
+                        //                   reminders: "Thursday",
+                        //                    rectangleColour: .pink,
+                        //                   textColor: .white
+                        //              )
+                        //
+                        //               CalendarListView(
+                        //                  reminders: "Friday",
+                        //                  rectangleColour: .pink,
+                        //                 textColor: .white
+                        //            )
+                        //
+                        //               CalendarListView(
+                        //                 reminders: "Saturday",
+                        //               rectangleColour: .pink,
+                        //               textColor: .white
+                        //         )
+                        //
+                        //         CalendarListView(
+                        //               reminders: "Sunday",
+                        //               rectangleColour: .pink,
+                        //               textColor: .white
+                        //         )
+                        //    }
+                        //  .frame(width: 120)
+                        
+                        
                         VStack{
                             
+                            //    NavigationStack {
+                            //             List (allDays) { currentCalendar in
+                            
+                            //First Item
+                            //                      NavigationLink {
+                            //                          ContentView (day: currentCalendar)
+                            //                    }
+                            //                 label: {
+                            //                    CalendarListView(day: currentCalendar)
+                            //              }
+                            //              }
+                            //         }
+                            
                             CalendarListView(
-                                reminders: "Monday",
-                                rectangleColour: .pink,
-                                textColor: .white
+                                reminders: "",
+                                rectangleColour: .gray,
+                                textColor: .black
                             )
                             
                             CalendarListView(
-                                reminders: "Tuesday",
-                                rectangleColour: .pink,
-                                textColor: .white
+                                reminders: "",
+                                rectangleColour: .white,
+                                textColor: .black
                             )
                             
                             CalendarListView(
-                                reminders: "Wednesday",
-                                rectangleColour: .pink,
-                                textColor: .white
+                                reminders: "",
+                                rectangleColour: .gray,
+                                textColor: .black
                             )
                             
                             CalendarListView(
-                                reminders: "Thursday",
-                                rectangleColour: .pink,
-                                textColor: .white
+                                reminders: "",
+                                rectangleColour: .white,
+                                textColor: .black
                             )
                             
                             CalendarListView(
-                                reminders: "Friday",
-                                rectangleColour: .pink,
-                                textColor: .white
+                                reminders: "",
+                                rectangleColour: .gray,
+                                textColor: .black
                             )
                             
                             CalendarListView(
-                                reminders: "Saturday",
-                                rectangleColour: .pink,
-                                textColor: .white
+                                reminders: "",
+                                rectangleColour: .white,
+                                textColor: .black
                             )
                             
                             CalendarListView(
-                                reminders: "Sunday",
-                                rectangleColour: .pink,
-                                textColor: .white
+                                reminders: "",
+                                rectangleColour: .gray,
+                                textColor: .black
                             )
+                            
                         }
-                        .frame(width: 120)
-                    
-                    
-                    VStack{
-                       
-                        CalendarListView(
-                            reminders: "",
-                            rectangleColour: .gray,
-                            textColor: .black
-                        )
-                        
-                        CalendarListView(
-                            reminders: "",
-                            rectangleColour: .white,
-                            textColor: .black
-                        )
-                        
-                        CalendarListView(
-                            reminders: "",
-                            rectangleColour: .gray,
-                            textColor: .black
-                        )
-                        
-                        CalendarListView(
-                            reminders: "",
-                            rectangleColour: .white,
-                            textColor: .black
-                        )
-                        
-                        CalendarListView(
-                            reminders: "",
-                            rectangleColour: .gray,
-                            textColor: .black
-                        )
-                        
-                        CalendarListView(
-                            reminders: "",
-                            rectangleColour: .white,
-                            textColor: .black
-                        )
-                        
-                        CalendarListView(
-                            reminders: "",
-                            rectangleColour: .gray,
-                            textColor: .black
-                        )
-                        
                     }
                 }
             }

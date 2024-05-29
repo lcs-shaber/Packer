@@ -11,27 +11,35 @@ struct CalendarListView: View {
     
     // MARK: Stored properties
     
-    let reminders: String
-    let rectangleColour: Color
-    let textColor: Color
+    let day: Calendar
     
     // MARK: Computed properties
     var body: some View {
         
-        ZStack{
+        HStack {
             
-            Rectangle()
-                .fill(rectangleColour)
-            Text(reminders)
-                .foregroundColor(textColor)
+            ZStack{
+                
+                Rectangle()
+                    .fill(day.rectangleColour1)
+                Text(day.reminders1)
+                    .foregroundColor(day.textColor1)
+            }
+            
+            ZStack {
+                
+                Rectangle()
+                    .fill(day.rectangleColour2)
+                Text(day.reminders2)
+                    .foregroundColor(day.textColor2)
+                
+            }
         }
     }
 }
 
 #Preview {
     CalendarListView(
-        reminders: "go for a walk",
-        rectangleColour: .gray,
-        textColor: .white
+       day: monday
     )
 }
