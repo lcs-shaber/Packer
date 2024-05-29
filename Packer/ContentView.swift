@@ -8,14 +8,132 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // MARK: Stored properties
+    
+    //
+    
+    // MARK: Computed properties
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+   
+        ZStack {
+            
+          // Background Color
+            Color (.green)
+           .ignoresSafeArea()
+            
+            VStack {
+                
+                ZStack {
+                    
+                    Rectangle()
+                        .fill(.purple)
+                        .frame(height: 120)
+                    
+                    Text ("CALENDAR")
+                        .bold()
+                        .foregroundColor(.white)
+                }
+                
+                HStack {
+                   
+                    
+                        VStack{
+                            
+                            CalendarListView(
+                                reminders: "Monday",
+                                rectangleColour: .pink,
+                                textColor: .white
+                            )
+                            
+                            CalendarListView(
+                                reminders: "Tuesday",
+                                rectangleColour: .pink,
+                                textColor: .white
+                            )
+                            
+                            CalendarListView(
+                                reminders: "Wednesday",
+                                rectangleColour: .pink,
+                                textColor: .white
+                            )
+                            
+                            CalendarListView(
+                                reminders: "Thursday",
+                                rectangleColour: .pink,
+                                textColor: .white
+                            )
+                            
+                            CalendarListView(
+                                reminders: "Friday",
+                                rectangleColour: .pink,
+                                textColor: .white
+                            )
+                            
+                            CalendarListView(
+                                reminders: "Saturday",
+                                rectangleColour: .pink,
+                                textColor: .white
+                            )
+                            
+                            CalendarListView(
+                                reminders: "Sunday",
+                                rectangleColour: .pink,
+                                textColor: .white
+                            )
+                        }
+                        .frame(width: 120)
+                    
+                    
+                    VStack{
+                       
+                        CalendarListView(
+                            reminders: "",
+                            rectangleColour: .gray,
+                            textColor: .black
+                        )
+                        
+                        CalendarListView(
+                            reminders: "",
+                            rectangleColour: .white,
+                            textColor: .black
+                        )
+                        
+                        CalendarListView(
+                            reminders: "",
+                            rectangleColour: .gray,
+                            textColor: .black
+                        )
+                        
+                        CalendarListView(
+                            reminders: "",
+                            rectangleColour: .white,
+                            textColor: .black
+                        )
+                        
+                        CalendarListView(
+                            reminders: "",
+                            rectangleColour: .gray,
+                            textColor: .black
+                        )
+                        
+                        CalendarListView(
+                            reminders: "",
+                            rectangleColour: .white,
+                            textColor: .black
+                        )
+                        
+                        CalendarListView(
+                            reminders: "",
+                            rectangleColour: .gray,
+                            textColor: .black
+                        )
+                        
+                    }
+                }
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
