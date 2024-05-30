@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct  Calendar: Identifiable {
     let id = UUID()
@@ -23,7 +24,7 @@ let monday = Calendar (
     textColor1: .white,
     reminders2: "jj",
     rectangleColour2: .gray,
-    textColor2: .black,
+    textColor2: .black
 )
 
 let tuesday = Calendar (
@@ -32,7 +33,7 @@ let tuesday = Calendar (
     textColor1: .white,
     reminders2: "jj",
     rectangleColour2: .white,
-    textColor2: .black,
+    textColor2: .black
 )
 
 let wednesday = Calendar (
@@ -41,7 +42,7 @@ let wednesday = Calendar (
     textColor1: .white,
     reminders2: "jj",
     rectangleColour2: .gray,
-    textColor2: .black,
+    textColor2: .black
 )
 
 let thurday = Calendar (
@@ -50,7 +51,7 @@ let thurday = Calendar (
     textColor1: .white,
     reminders2: "jj",
     rectangleColour2: .white,
-    textColor2: .black,
+    textColor2: .black
 )
 
 let friday = Calendar (
@@ -59,7 +60,7 @@ let friday = Calendar (
     textColor1: .white,
     reminders2: "jj",
     rectangleColour2: .gray,
-    textColor2: .black,
+    textColor2: .black
 )
 
 let saturday = Calendar (
@@ -68,7 +69,7 @@ let saturday = Calendar (
     textColor1: .white,
     reminders2: "jj",
     rectangleColour2: .white,
-    textColor2: .black,
+    textColor2: .black
 )
 
 let sunday = Calendar (
@@ -77,7 +78,7 @@ let sunday = Calendar (
     textColor1: .white,
     reminders2: "jj",
     rectangleColour2: .gray,
-    textColor2: .black,
+    textColor2: .black
 )
 
 let allDays = [
