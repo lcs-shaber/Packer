@@ -66,7 +66,7 @@ struct ContentView: View {
                 Text ("Calendar")
             } .tag (1)
         
-        Text ("Packing List")
+        PackingListView()
             .tabItem {
                 Image (systemName: "list.bullet.clipboard")
                 Text ("Packing List")
