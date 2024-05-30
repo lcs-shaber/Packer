@@ -19,45 +19,65 @@ struct  Calendar: Identifiable {
     
 let monday = Calendar (
     reminders1: "f",
-    rectangleColour1: .gray,
-    textColor1: .black,
-    //complete the list
+    rectangleColour1: .pink,
+    textColor1: .white,
+    reminders2: "jj",
+    rectangleColour2: .gray,
+    textColor2: .black,
 )
 
 let tuesday = Calendar (
-    reminders: "f",
-    rectangleColour: .white,
-    textColor: .black
+    reminders1: "f",
+    rectangleColour1: .pink,
+    textColor1: .white,
+    reminders2: "jj",
+    rectangleColour2: .white,
+    textColor2: .black,
 )
 
 let wednesday = Calendar (
-    reminders: "f",
-    rectangleColour: .gray,
-    textColor: .black
+    reminders1: "f",
+    rectangleColour1: .pink,
+    textColor1: .white,
+    reminders2: "jj",
+    rectangleColour2: .gray,
+    textColor2: .black,
 )
 
 let thurday = Calendar (
-    reminders: "f",
-    rectangleColour: .white,
-    textColor: .black
+    reminders1: "f",
+    rectangleColour1: .pink,
+    textColor1: .white,
+    reminders2: "jj",
+    rectangleColour2: .white,
+    textColor2: .black,
 )
 
 let friday = Calendar (
-    reminders: "f",
-    rectangleColour: .gray,
-    textColor: .black
+    reminders1: "f",
+    rectangleColour1: .pink,
+    textColor1: .white,
+    reminders2: "jj",
+    rectangleColour2: .gray,
+    textColor2: .black,
 )
 
 let saturday = Calendar (
-    reminders: "f",
-    rectangleColour: .white,
-    textColor: .black
+    reminders1: "f",
+    rectangleColour1: .pink,
+    textColor1: .white,
+    reminders2: "jj",
+    rectangleColour2: .white,
+    textColor2: .black,
 )
 
 let sunday = Calendar (
-    reminders: "f",
-    rectangleColour: .white,
-    textColor: .black
+    reminders1: "f",
+    rectangleColour1: .pink,
+    textColor1: .white,
+    reminders2: "jj",
+    rectangleColour2: .gray,
+    textColor2: .black,
 )
 
 let allDays = [
