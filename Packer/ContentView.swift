@@ -19,7 +19,7 @@ struct ContentView: View {
         ZStack {
             
           // Background Color
-            Color (.green)
+           Color("OrangePink")
            .ignoresSafeArea()
             
             VStack {
@@ -27,7 +27,7 @@ struct ContentView: View {
                 ZStack {
                     
                     Rectangle()
-                        .fill(.purple)
+                        .fill("darkPurple")
                         .frame(height: 120)
                     
                     Text ("CALENDAR")

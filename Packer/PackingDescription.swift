@@ -31,7 +31,7 @@ struct PackingDescription: View {
             Text (item.item)
 
         }
-        .padding()
+        
         
         
     }
