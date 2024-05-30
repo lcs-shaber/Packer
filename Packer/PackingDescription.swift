@@ -11,7 +11,8 @@ struct PackingDescription: View {
     
     // MARK: Stored properties
     
-   // let reminder: Reminders
+    let weekDay: String
+    let item: String
     
     // MARK: Computed properties
     
@@ -22,13 +23,13 @@ struct PackingDescription: View {
             
             HStack {
                 
-                Text ("Monday:")
+                Text (weekDay)
                     .bold()
                 Spacer()
                 
             }
             
-                Text ("Todo")
+                Text (item)
 
         }
         .padding()
@@ -38,5 +39,5 @@ struct PackingDescription: View {
 }
 
 #Preview {
-    PackingDescription()
+    PackingDescription(weekDay: "Monday:", item: "Call mom")
 }

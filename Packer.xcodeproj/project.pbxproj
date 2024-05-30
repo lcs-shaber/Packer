@@ -15,6 +15,7 @@
 		E09A562E2C0775EE00F7543A /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09A562D2C0775EE00F7543A /* Calendar.swift */; };
 		E0F490602C08D6AF0061A6FF /* PackingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4905F2C08D6AF0061A6FF /* PackingListView.swift */; };
 		E0F490632C08D8AF0061A6FF /* PackingDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F490622C08D8AF0061A6FF /* PackingDescription.swift */; };
+		E0F490672C08DBC50061A6FF /* PackingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F490662C08DBC50061A6FF /* PackingItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		E09A562D2C0775EE00F7543A /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		E0F4905F2C08D6AF0061A6FF /* PackingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackingListView.swift; sourceTree = "<group>"; };
 		E0F490622C08D8AF0061A6FF /* PackingDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackingDescription.swift; sourceTree = "<group>"; };
+		E0F490662C08DBC50061A6FF /* PackingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackingItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 		E09A560F2C07698600F7543A = {
 			isa = PBXGroup;
 			children = (
+				E0F490662C08DBC50061A6FF /* PackingItem.swift */,
 				E09A562D2C0775EE00F7543A /* Calendar.swift */,
 				E09A561A2C07698600F7543A /* Packer */,
 				E09A56192C07698600F7543A /* Products */,
@@ -152,6 +155,7 @@
 				E0F490632C08D8AF0061A6FF /* PackingDescription.swift in Sources */,
 				E09A561E2C07698600F7543A /* ContentView.swift in Sources */,
 				E09A561C2C07698600F7543A /* PackerApp.swift in Sources */,
+				E0F490672C08DBC50061A6FF /* PackingItem.swift in Sources */,
 				E0F490602C08D6AF0061A6FF /* PackingListView.swift in Sources */,
 				E09A562C2C07703900F7543A /* CalendarListView.swift in Sources */,
 				E09A562E2C0775EE00F7543A /* Calendar.swift in Sources */,
