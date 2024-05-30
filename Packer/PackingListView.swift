@@ -28,18 +28,22 @@ struct PackingListView: View {
                     
                     Rectangle()
                         .fill(.gray)
+                        .frame(height: 100)
+                        .padding()
                     Text ("Packing List")
+                        .bold()
                     
                     
                 }
                 
-                HStack {
-                    
-                    Text ("hh")
-                    Spacer()
-                    
-                }
-                .padding()
+                NavigationStack {
+                         List (allItems) { currentPackingItem in
+                 
+                         label: do {
+                                PackingDescription(item: currentPackingItem)
+                          }
+                          }
+                     }
             }
         }
     }
