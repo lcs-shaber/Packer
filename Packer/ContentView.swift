@@ -56,5 +56,26 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    //Tab bar
+    
+    TabView (selection: Binding.constant(1)) {
+        
+       ContentView()
+            .tabItem {
+                Image (systemName: "calendar")
+                Text ("Calendar")
+            } .tag (1)
+        
+        Text ("Packing List")
+            .tabItem {
+                Image (systemName: "list.bullet.clipboard")
+                Text ("Packing List")
+            } .tag (2)
+    }
+    
+    //Change the colour of the currently active tab item
+    
+    .accentColor(.red)
+    
+   
 }
