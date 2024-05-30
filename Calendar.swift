@@ -19,7 +19,7 @@ struct  Calendar: Identifiable {
 }
     
 let monday = Calendar (
-    reminders1: "f",
+    reminders1: "Monday",
     rectangleColour1: .pink,
     textColor1: .white,
     reminders2: "jj",
@@ -28,7 +28,7 @@ let monday = Calendar (
 )
 
 let tuesday = Calendar (
-    reminders1: "f",
+    reminders1: "Tuesday",
     rectangleColour1: .pink,
     textColor1: .white,
     reminders2: "jj",
@@ -37,7 +37,7 @@ let tuesday = Calendar (
 )
 
 let wednesday = Calendar (
-    reminders1: "f",
+    reminders1: "Wednesday",
     rectangleColour1: .pink,
     textColor1: .white,
     reminders2: "jj",
@@ -46,7 +46,7 @@ let wednesday = Calendar (
 )
 
 let thurday = Calendar (
-    reminders1: "f",
+    reminders1: "Thursday",
     rectangleColour1: .pink,
     textColor1: .white,
     reminders2: "jj",
@@ -55,7 +55,7 @@ let thurday = Calendar (
 )
 
 let friday = Calendar (
-    reminders1: "f",
+    reminders1: "Friday",
     rectangleColour1: .pink,
     textColor1: .white,
     reminders2: "jj",
@@ -64,7 +64,7 @@ let friday = Calendar (
 )
 
 let saturday = Calendar (
-    reminders1: "f",
+    reminders1: "Saturday",
     rectangleColour1: .pink,
     textColor1: .white,
     reminders2: "jj",
@@ -73,7 +73,7 @@ let saturday = Calendar (
 )
 
 let sunday = Calendar (
-    reminders1: "f",
+    reminders1: "Sunday",
     rectangleColour1: .pink,
     textColor1: .white,
     reminders2: "jj",
