@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct CalendarDayView: View {
+    
+   let calendarDay: CalendarDay
+    
     var body: some View {
       
         ZStack {
@@ -37,7 +40,7 @@ struct CalendarDayView: View {
                                 .padding(.trailing)
                         }
                         
-                        Text ("Monday")
+                        Text (calendarDay.dayName)
                             .bold()
                             .font(.title)
                             .foregroundColor(.white)
@@ -47,7 +50,7 @@ struct CalendarDayView: View {
                 }
                 
                 List{
-                    Text("Add an event")
+                    Text(calendarDay.event)
                         .foregroundColor(.gray)
                 }
                 .padding()
@@ -58,5 +61,7 @@ struct CalendarDayView: View {
 }
 
 #Preview {
-    CalendarDayView()
+    CalendarDayView(
+        calendarDay: monday3
+    )
 }
