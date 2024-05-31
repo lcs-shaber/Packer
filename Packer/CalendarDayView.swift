@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CalendarDayView: View {
     
-   let calendarDay: CalendarDay
+   let day: Calendar
     
     var body: some View {
       
@@ -40,7 +40,7 @@ struct CalendarDayView: View {
                                 .padding(.trailing)
                         }
                         
-                        Text (calendarDay.dayName)
+                        Text (day.dayName)
                             .bold()
                             .font(.title)
                             .foregroundColor(.white)
@@ -50,7 +50,7 @@ struct CalendarDayView: View {
                 }
                 
                 List{
-                    Text(calendarDay.event)
+                    Text(day.reminders)
                         .foregroundColor(.gray)
                 }
                 .padding()
@@ -62,6 +62,6 @@ struct CalendarDayView: View {
 
 #Preview {
     CalendarDayView(
-        calendarDay: monday3
+        day: monday
     )
 }

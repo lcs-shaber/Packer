@@ -38,10 +38,10 @@ struct PackingListView: View {
                 }
                 
                 NavigationStack {
-                         List (allItems) { currentPackingItem in
+                         List (allDays) { currentCalendar in
                  
                          label: do {
-                                PackingDescription(item: currentPackingItem)
+                                PackingDescription(day: currentCalendar)
                           }
                           }
                      }

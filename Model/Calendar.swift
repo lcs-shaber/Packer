@@ -10,73 +10,81 @@ import SwiftUI
 
 struct  Calendar: Identifiable {
     let id = UUID()
-    let reminders1: String
+    let dayName: String
     let rectangleColour1: Color
     let textColor1: Color
     let reminders2: String
+    let reminders: String
     let rectangleColour2: Color
     let textColor2: Color
 }
     
 let monday = Calendar (
-    reminders1: "Monday",
+    dayName: "Monday",
     rectangleColour1: Color.lightPurple,
     textColor1: .white,
-    reminders2: "jj",
+    reminders2: "Add a packing Item",
+    reminders: "Add an event",
     rectangleColour2: Color.lightGray,
     textColor2: .black
 )
 
 let tuesday = Calendar (
-    reminders1: "Tuesday",
+    dayName: "Tuesday",
     rectangleColour1: Color.lightPurple,
     textColor1: .white,
     reminders2: "jj",
+    reminders: "kk",
     rectangleColour2: .white,
     textColor2: .black
 )
 
 let wednesday = Calendar (
-    reminders1: "Wednesday",
+    dayName: "Wednesday",
     rectangleColour1: Color.lightPurple,
     textColor1: .white,
     reminders2: "jj",
+    reminders: "kk",
     rectangleColour2: Color.lightGray,
     textColor2: .black
 )
 
 let thurday = Calendar (
-    reminders1: "Thursday",
+    dayName: "Thursday",
     rectangleColour1: Color.lightPurple,
     textColor1: .white,
     reminders2: "jj",
+    reminders: "kk",
     rectangleColour2: .white,
     textColor2: .black
 )
 
 let friday = Calendar (
-    reminders1: "Friday",
+    dayName: "Friday",
     rectangleColour1: Color.lightPurple,
     textColor1: .white,
     reminders2: "jj",
+    reminders: "kk",
     rectangleColour2: Color.lightGray,
     textColor2: .black
 )
 
 let saturday = Calendar (
-    reminders1: "Saturday",
+    dayName: "Saturday",
     rectangleColour1: Color.lightPurple,
     textColor1: .white,
     reminders2: "jj",
+    reminders: "kk",
     rectangleColour2: .white,
     textColor2: .black
 )
 
 let sunday = Calendar (
-    reminders1: "Sunday",
+    dayName: "Sunday",
     rectangleColour1: Color.lightPurple,
     textColor1: .white,
     reminders2: "jj",
+    reminders: "kk",
     rectangleColour2: Color.lightGray,
     textColor2: .black
 )

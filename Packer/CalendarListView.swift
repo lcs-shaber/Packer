@@ -22,7 +22,7 @@ struct CalendarListView: View {
                 
                 Rectangle()
                     .fill(day.rectangleColour1)
-                Text(day.reminders1)
+                Text(day.dayName)
                     .foregroundColor(day.textColor1)
                     .bold()
                     .font(.title3)
@@ -34,7 +34,7 @@ struct CalendarListView: View {
                     .fill(day.rectangleColour2)
                 Text(day.reminders2)
                     .foregroundColor(day.textColor2)
-                
+                // "->"day.reminders
             }
         }
     }

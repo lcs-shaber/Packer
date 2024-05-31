@@ -51,7 +51,7 @@
 			children = (
 				E0D8F0602C0A4BC100D06A57 /* CalendarDay.swift */,
 				E0F490662C08DBC50061A6FF /* PackingItem.swift */,
-				E09A562D2C0775EE00F7543A /* Calendar.swift */,
+				E0D8F0622C0A526500D06A57 /* Model */,
 				E09A561A2C07698600F7543A /* Packer */,
 				E09A56192C07698600F7543A /* Products */,
 			);
@@ -86,6 +86,14 @@
 				E09A56222C07698900F7543A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E0D8F0622C0A526500D06A57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E09A562D2C0775EE00F7543A /* Calendar.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
