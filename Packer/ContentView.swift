@@ -40,11 +40,10 @@ struct ContentView: View {
                             
                                 NavigationStack {
                                          List (allDays) { currentCalendar in
-                            
-                         
-                                          //        NavigationLink {
-                                          //            ContentView (day: currentCalendar)
-                                          //      }
+                                            
+                             //           NavigationLink {
+                             //   CalendarDayView (day: currentCalendar)
+                             //           }
                                          label: do {
                                                 CalendarListView(day: currentCalendar)
                                           }
