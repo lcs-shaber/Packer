@@ -24,6 +24,7 @@ struct PackingDescription: View {
                 
                 Text (item.weekDay)
                     .bold()
+                    .font(.title3)
                 Spacer()
                 
             }

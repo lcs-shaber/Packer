@@ -27,11 +27,12 @@ struct ContentView: View {
                 ZStack {
                     
                     Rectangle()
-                        .fill("darkPurple")
+                        .fill(Color.darkPurple)
                         .frame(height: 120)
                     
                     Text ("CALENDAR")
                         .bold()
+                        .font(.title)
                         .foregroundColor(.white)
                 }
                 

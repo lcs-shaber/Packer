@@ -18,7 +18,7 @@ struct PackingListView: View {
         
         ZStack{
             // Background Color
-            Color (.green)
+            Color("OrangePink")
                 .ignoresSafeArea()
             
             VStack {
@@ -27,11 +27,12 @@ struct PackingListView: View {
                     
                     
                     Rectangle()
-                        .fill(.gray)
+                        .fill(Color.lightGray)
                         .frame(height: 100)
                         .padding()
                     Text ("Packing List")
                         .bold()
+                        .font(.title2)
                     
                     
                 }

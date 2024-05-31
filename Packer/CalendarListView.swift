@@ -25,6 +25,7 @@ struct CalendarListView: View {
                 Text(day.reminders1)
                     .foregroundColor(day.textColor1)
                     .bold()
+                    .font(.title3)
             }
             
             ZStack {
