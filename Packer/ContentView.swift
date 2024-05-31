@@ -15,42 +15,47 @@ struct ContentView: View {
     
     // MARK: Computed properties
     var body: some View {
-   
-        ZStack {
-            
-          // Background Color
-           Color("OrangePink")
-           .ignoresSafeArea()
-            
-            VStack {
+        NavigationStack{
+            ZStack {
                 
-                ZStack {
+                // Background Color
+                Color("OrangePink")
+                    .ignoresSafeArea()
+                
+                VStack {
                     
-                    Rectangle()
-                        .fill(Color.darkPurple)
-                        .frame(height: 120)
+                    ZStack {
+                        
+                        Rectangle()
+                            .fill(Color.darkPurple)
+                            .frame(height: 120)
+                        
+                        Text ("CALENDAR")
+                            .bold()
+                            .font(.title)
+                            .foregroundColor(.white)
+                    }
                     
-                    Text ("CALENDAR")
-                        .bold()
-                        .font(.title)
-                        .foregroundColor(.white)
+                    
+                    
+                    List (allDays) { currentCalendar in
+                        NavigationLink {
+                            CalendarDayView(day: currentCalendar)
+                        } label: {
+                            CalendarListView(day: currentCalendar)
+                                .frame(height: 55)
+                        }
+                        .listRowBackground(Color.clear)
+                        
+                        
+                    }
+                    .listStyle(.plain)
+                    .background {
+                        Color.clear
+                    }
                 }
-                
-                
-                            
-                                NavigationStack {
-                                         List (allDays) { currentCalendar in
-                                            
-                          //              NavigationLink {
-                          //      CalendarDayView (calendarDay: currentCalendarDay)
-                          //              }
-                                         label: do {
-                                                CalendarListView(day: currentCalendar)
-                                          }
-                                          }
-                                     }
+                .padding()
             }
-            .padding()
         }
     }
 }
@@ -60,7 +65,7 @@ struct ContentView: View {
     
     TabView (selection: Binding.constant(1)) {
         
-       ContentView()
+        ContentView()
             .tabItem {
                 Image (systemName: "calendar")
                 Text ("Calendar")
@@ -77,5 +82,5 @@ struct ContentView: View {
     
     .accentColor(.red)
     
-   
+    
 }
