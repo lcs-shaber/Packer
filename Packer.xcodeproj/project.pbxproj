@@ -51,7 +51,6 @@
 			children = (
 				E0D8F0602C0A4BC100D06A57 /* CalendarDay.swift */,
 				E0F490662C08DBC50061A6FF /* PackingItem.swift */,
-				E0D8F0622C0A526500D06A57 /* Model */,
 				E09A561A2C07698600F7543A /* Packer */,
 				E09A56192C07698600F7543A /* Products */,
 			);
@@ -69,11 +68,13 @@
 			isa = PBXGroup;
 			children = (
 				E09A561B2C07698600F7543A /* PackerApp.swift */,
+				E0D8F0622C0A526500D06A57 /* Model */,
 				E09A561D2C07698600F7543A /* ContentView.swift */,
 				E09A562B2C07703900F7543A /* CalendarListView.swift */,
 				E0F4905F2C08D6AF0061A6FF /* PackingListView.swift */,
 				E0F490622C08D8AF0061A6FF /* PackingDescription.swift */,
 				E0F490682C0951C50061A6FF /* CalendarDayView.swift */,
+				E0D8F0632C0AABE600D06A57 /* Views */,
 				E09A561F2C07698900F7543A /* Assets.xcassets */,
 				E09A56212C07698900F7543A /* Preview Content */,
 			);
@@ -94,6 +95,13 @@
 				E09A562D2C0775EE00F7543A /* Calendar.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E0D8F0632C0AABE600D06A57 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

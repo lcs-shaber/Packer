@@ -32,9 +32,17 @@ struct CalendarListView: View {
                 
                 Rectangle()
                     .fill(day.rectangleColour2)
-                Text(day.reminders2)
-                    .foregroundColor(day.textColor2)
-                // "->"day.reminders
+                
+                VStack (alignment: .leading) {
+                    
+                    Text(day.reminders)
+                        .foregroundColor(day.textColor2)
+                    
+                    HStack {
+                        Text ("->")
+                        Text (day.reminders2)
+                    }
+                }
             }
         }
     }
