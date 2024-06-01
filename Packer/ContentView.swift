@@ -15,6 +15,7 @@ struct ContentView: View {
     
     // MARK: Computed properties
     var body: some View {
+        
         NavigationStack{
             ZStack {
                 
@@ -46,7 +47,7 @@ struct ContentView: View {
                                 .frame(height: 55)
                         }
                         .listRowBackground(Color.clear)
-                        
+                        .listRowSeparator(.hidden)
                         
                     }
                     .listStyle(.plain)
@@ -57,6 +58,7 @@ struct ContentView: View {
                 .padding()
             }
         }
+        .accentColor(.darkPurple)
     }
 }
 

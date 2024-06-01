@@ -17,7 +17,7 @@ struct PackingDescription: View {
     
     var body: some View {
         
-        VStack {
+        VStack (alignment: .leading) {
             
             
             HStack {
