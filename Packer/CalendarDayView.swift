@@ -13,13 +13,15 @@ struct CalendarDayView: View {
     
     var body: some View {
       
+        NavigationStack {
+            
         ZStack {
             
             // Background Color
              Color("OrangePink")
              .ignoresSafeArea()
             
-            VStack{
+            VStack {
                 
                 
                 ZStack {
@@ -49,14 +51,26 @@ struct CalendarDayView: View {
                     
                 }
                 
-                List{
-                    Text(day.reminders)
-                        .foregroundColor(.gray)
+                
+                    List (allDays){ currentCalendar in 
+                        
+                        NavigationLink {
+                            AddPackingListView (day: currentCalendar)
+                        } label: {
+                            Text(day.reminders)
+                                .foregroundColor(.gray)
+                        }
+                    }
+                
+                    .listStyle(.plain)
+                    .background {
+                        Color.clear
+                    }
                 }
                 .padding()
             }
         }
-        
+        .accentColor(.darkPurple)
     }
 }
 

@@ -33,7 +33,7 @@ let tuesday = Calendar (
     dayName: "Tuesday",
     rectangleColour1: Color.lightPurple,
     textColor1: .white,
-    reminders2: "jj",
+    reminders2: "jj2",
     reminders: "kk",
     rectangleColour2: .white,
     textColor2: .black
@@ -43,7 +43,7 @@ let wednesday = Calendar (
     dayName: "Wednesday",
     rectangleColour1: Color.lightPurple,
     textColor1: .white,
-    reminders2: "jj",
+    reminders2: "jj3",
     reminders: "kk",
     rectangleColour2: Color.lightGray,
     textColor2: .black
@@ -53,7 +53,7 @@ let thurday = Calendar (
     dayName: "Thursday",
     rectangleColour1: Color.lightPurple,
     textColor1: .white,
-    reminders2: "jj",
+    reminders2: "jj4",
     reminders: "kk",
     rectangleColour2: .white,
     textColor2: .black
@@ -63,7 +63,7 @@ let friday = Calendar (
     dayName: "Friday",
     rectangleColour1: Color.lightPurple,
     textColor1: .white,
-    reminders2: "jj",
+    reminders2: "jj5",
     reminders: "kk",
     rectangleColour2: Color.lightGray,
     textColor2: .black
@@ -73,7 +73,7 @@ let saturday = Calendar (
     dayName: "Saturday",
     rectangleColour1: Color.lightPurple,
     textColor1: .white,
-    reminders2: "jj",
+    reminders2: "jj6",
     reminders: "kk",
     rectangleColour2: .white,
     textColor2: .black
@@ -83,7 +83,7 @@ let sunday = Calendar (
     dayName: "Sunday",
     rectangleColour1: Color.lightPurple,
     textColor1: .white,
-    reminders2: "jj",
+    reminders2: "jj7",
     reminders: "kk",
     rectangleColour2: Color.lightGray,
     textColor2: .black
