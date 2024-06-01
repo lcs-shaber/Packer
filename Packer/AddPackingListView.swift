@@ -25,14 +25,22 @@ struct AddPackingListView: View {
             
             VStack {
                 
-               
+                HStack {
+                    
+                    Spacer()
+                    
+                    Image (systemName: "plus")
+                        .bold()
+                        .foregroundColor(.darkBlue)
+                        .font(.system(size: 30))
+                        .padding(.horizontal)
+                }
                 
                 Text("What do you need to bring?")
                     .bold()
                     .font(.title)
                     .foregroundColor(Color.darkGray)
-              
-                Spacer ()
+                    .padding(.bottom)
                 
                 ZStack {
                     RoundedRectangle(cornerRadius: 30 )
