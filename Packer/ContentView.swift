@@ -63,8 +63,8 @@ struct ContentView: View {
 }
 
 #Preview {
-    //Tab bar
     
+    //Tab bar
     TabView (selection: Binding.constant(1)) {
         
         ContentView()
