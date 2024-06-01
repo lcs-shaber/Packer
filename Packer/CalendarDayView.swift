@@ -23,6 +23,15 @@ struct CalendarDayView: View {
             
             VStack {
                 
+                HStack{
+                    Spacer()
+                    Image(systemName: "plus")
+                        .font(.system(size: 25))
+                        .bold()
+                        .foregroundColor(.darkPurple)
+                        .padding(.horizontal)
+                        .padding(.bottom)
+                }
                 
                 ZStack {
                     
@@ -31,22 +40,12 @@ struct CalendarDayView: View {
                         .frame(height: 100)
                         .padding(.horizontal)
                     
-                    VStack{
-                        
-                        HStack{
-                            Spacer()
-                            Image(systemName: "plus")
-                                .font(.system(size: 20))
-                                .bold()
-                                .foregroundColor(.white)
-                                .padding(.trailing)
-                        }
                         
                         Text (day.dayName)
                             .bold()
                             .font(.title)
                             .foregroundColor(.white)
-                    }
+                    
                     
                     
                 }
