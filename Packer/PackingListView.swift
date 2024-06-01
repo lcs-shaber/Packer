@@ -15,7 +15,8 @@ struct PackingListView: View {
     
     // MARK: Computed properties
     var body: some View {
-        
+        NavigationStack {
+            
         ZStack{
             // Background Color
             Color("OrangePink")
@@ -37,13 +38,20 @@ struct PackingListView: View {
                     
                 }
                 
-                NavigationStack {
+                
                          List (allDays) { currentCalendar in
                  
                          label: do {
                                 PackingDescription(day: currentCalendar)
                           }
+                         
                           }
+                         .listStyle(.plain)
+                         .background {
+                             Color.clear
+                         }
+                         .padding()
+                         
                      }
             }
         }
