@@ -20,7 +20,9 @@ struct SplashScreenView: View {
         ZStack{
             
             //first layer
-            Color.orangePink
+            RadialGradient(gradient: Gradient(colors: [.gradientYellow,.gradientOrange,.gradientPink,.gradientPurple]),
+            center: .center,
+            startRadius: 0, endRadius: 400)
                 .ignoresSafeArea()
             
             VStack{
@@ -51,17 +53,19 @@ struct SplashScreenView: View {
                     
                     Spacer()
                     
-                }.padding(.horizontal)
+                    
+                }
                 
-                Spacer()
+                
                 
                 Image(systemName: "checkmark.circle.fill")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 70)
+                    .frame(width: 75)
+                    .position(x: 197, y: 233)
                     .foregroundColor(.logoPurple)
                 
-                Spacer()
+              
                 
                 Text ("Get Started")
                     .bold()
