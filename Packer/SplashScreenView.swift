@@ -8,6 +8,14 @@
 import SwiftUI
 
 struct SplashScreenView: View {
+    
+    // MARK: Stored properties
+    
+    @Binding var getsStarted: Bool
+    
+    
+    // MARK: Computed properties
+    
     var body: some View {
         ZStack{
             
@@ -17,6 +25,7 @@ struct SplashScreenView: View {
             
             VStack{
                 //second layer
+                
                 HStack{
                     
                     Spacer()
@@ -58,6 +67,9 @@ struct SplashScreenView: View {
                     .bold()
                     .foregroundColor(.white)
                     .font(.largeTitle)
+                    .onTapGesture {
+                        getsStarted = true
+                    }
                 Spacer()
             }
             
@@ -66,5 +78,5 @@ struct SplashScreenView: View {
 }
 
 #Preview {
-    SplashScreenView()
+    SplashScreenView(getsStarted: Binding.constant(false))
 }

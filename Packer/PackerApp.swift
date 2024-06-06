@@ -11,7 +11,7 @@ import SwiftUI
 struct PackerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OpeningView()
         }
     }
 }

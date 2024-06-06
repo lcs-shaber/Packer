@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct OpeningView: View {
+    
+    // MARK: Stored properties
+    @State private var hasChosenGetStarted = false
+    
+    
+    // MARK: Computed properties
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        if hasChosenGetStarted == false {
+            SplashScreenView(getsStarted: $hasChosenGetStarted)
+        } else {
+            ContentView()
+        }
     }
 }
 
