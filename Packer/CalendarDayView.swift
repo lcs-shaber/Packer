@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct CalendarDayView: View {
+    // MARK: Stored properties
     
-   let day: Calendar
+    let day: Calendar
     
+    // Is the sheet to add a new to-do item showing right now?
+    @State var NewItemSheet = false
+    
+    // MARK: Computed properties
+   
     var body: some View {
       
         NavigationStack {
@@ -22,16 +28,6 @@ struct CalendarDayView: View {
              .ignoresSafeArea()
             
             VStack {
-                
-                HStack{
-                    Spacer()
-                    Image(systemName: "plus")
-                        .font(.system(size: 25))
-                        .bold()
-                        .foregroundColor(.darkPurple)
-                        .padding(.horizontal)
-                        .padding(.bottom)
-                }
                 
                 ZStack {
                     
@@ -68,6 +64,32 @@ struct CalendarDayView: View {
                 }
                 .padding()
             }
+            
+            //show the sheet to a new Item
+            .sheet(
+                isPresented: $NewItemSheet
+            ) {
+                Text("Hello, world!")
+                    .presentationDetents([.medium, .fraction(0.15)])
+            }
+            
+            // Add a tool bar to the top of the interface
+            // NOTE: For a toolbar to appear, it must be
+            //       inside a NavigationView or NavigationStack.
+            .toolbar {
+                // Add a button to trigger showing the sheet
+                ToolbarItem(placement: .automatic) {
+                    Button {
+                        NewItemSheet = true
+                    } label: {
+                        Image(systemName: "plus")
+                            .bold()
+                            .font(.title2)
+                            .foregroundColor(.darkPurple)
+                    }
+                }
+            }
+            
         }
         .accentColor(.darkPurple)
     }
