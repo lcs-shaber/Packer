@@ -54,6 +54,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E04A7D302C13892F00C56F68 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		E09A560F2C07698600F7543A = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +86,7 @@
 				E04A7D292C120E1E00C56F68 /* SplashScreenView.swift */,
 				E04A7D2B2C12164500C56F68 /* OpeningView.swift */,
 				E0D8F0622C0A526500D06A57 /* Model */,
+				E04A7D302C13892F00C56F68 /* Helper */,
 				E09A561D2C07698600F7543A /* ContentView.swift */,
 				E04A7D2D2C1386D000C56F68 /* CalendarView.swift */,
 				E09A562B2C07703900F7543A /* CalendarListView.swift */,
