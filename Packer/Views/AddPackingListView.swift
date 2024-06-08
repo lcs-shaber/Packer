@@ -16,6 +16,9 @@ struct AddPackingListView: View {
     // Is the sheet to add a new to-do item showing right now?
     @State var presentingNewItemSheet = false
     
+    // The list of items to bring
+    @State var itemList: [String] = []
+    
     // MARK: Computed properties
     
     var body: some View {
@@ -48,14 +51,24 @@ struct AddPackingListView: View {
                             .font(.title)
                     }
                     
-                    List {
-                        
-                        Text (day.reminders2)
-                        
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 40)
+                            .padding()
+                            .foregroundColor(.white)
+                    // Show the user's items
+                    Text("packing items")
+                        .font(.title3)
+                    ScrollView {
+                        VStack(spacing: 5) {
+                            ForEach(itemList, id: \.self) { currentItems in
+                                Text("\(currentItems)")
+                                Divider()
+                            }
+                            
+                        }
+                        }
                     }
-                    .listStyle(.inset)
-                    .padding(.horizontal)
-                    .padding(.bottom)
+                    
                     
                 }
             }
@@ -64,7 +77,7 @@ struct AddPackingListView: View {
             .sheet(
                 isPresented: $presentingNewItemSheet
             ) {
-                Text("Hello, world!")
+                NewItemView()
                     .presentationDetents([.medium, .fraction(0.15)])
             }
             
