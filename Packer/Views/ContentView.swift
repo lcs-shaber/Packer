@@ -35,7 +35,7 @@ struct ContentView: View {
         
         //Change the colour of the currently active tab item
         
-        .accentColor(.red)
+        .accentColor(.black)
         
     }
 }
