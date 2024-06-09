@@ -21,7 +21,7 @@ struct NewItemView: View {
     var body: some View {
         HStack{
             
-            TextField("Make a guess", text: $givenInput)
+            TextField("Add an item", text: $givenInput)
                 .padding()
             
             Button {
