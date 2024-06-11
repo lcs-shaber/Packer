@@ -58,15 +58,6 @@ struct AddPackingListView: View {
                     // Show the user's items
                     Text("packing items")
                         .font(.title3)
-                    ScrollView {
-                        VStack(spacing: 5) {
-                            ForEach(itemList, id: \.self) { currentItems in
-                                Text("\(currentItems)")
-                                Divider()
-                            }
-                            
-                        }
-                        }
                     }
                     
                     

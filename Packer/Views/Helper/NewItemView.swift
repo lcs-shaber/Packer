@@ -16,6 +16,10 @@ struct NewItemView: View {
     
     // The list of items to bring
     @State var itemList: [String] = []
+    
+    // obtain a refrence to the source of truth for the items that are being added
+    @Binding var addedItem: [AddedItem]
+    
     // MARK: Computed properties
     
     var body: some View {
