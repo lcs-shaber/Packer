@@ -13,14 +13,15 @@ struct AddPackingListView: View {
     
     let day: Calendar
     
+    @State private var object: String = ""
+    
     // Is the sheet to add a new to-do item showing right now?
     @State var presentingNewItemSheet = false
+    
     
     //Source of truth for the added object
     @State private var addedItem: [AddedItem] = exampleObjects
     
-    // The list of items to bring
-    @State var itemList: [String] = []
     
     // MARK: Computed properties
     
@@ -70,7 +71,9 @@ struct AddPackingListView: View {
             .sheet(
                 isPresented: $presentingNewItemSheet
             ) {
-                NewItemView()
+                NewItemView(
+                   
+                )
                     .presentationDetents([.medium, .fraction(0.15)])
             }
             
@@ -78,9 +81,11 @@ struct AddPackingListView: View {
             // NOTE: For a toolbar to appear, it must be
             //       inside a NavigationView or NavigationStack.
             .toolbar {
+                
                 // Add a button to trigger showing the sheet
                 ToolbarItem(placement: .automatic) {
                     Button {
+                        
                         presentingNewItemSheet = true
                     } label: {
                         Image(systemName: "plus")
