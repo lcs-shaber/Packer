@@ -16,6 +16,9 @@ struct AddPackingListView: View {
     // Is the sheet to add a new to-do item showing right now?
     @State var presentingNewItemSheet = false
     
+    //Source of truth for the added object
+    @State private var addedItem: [AddedItem] = exampleObjects
+    
     // The list of items to bring
     @State var itemList: [String] = []
     
@@ -51,14 +54,13 @@ struct AddPackingListView: View {
                             .font(.title)
                     }
                     
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 40)
-                            .padding()
-                            .foregroundColor(.white)
+                    
                     // Show the user's items
-                    Text("packing items")
-                        .font(.title3)
-                    }
+                        List (addedItem) { addedItem in
+                            
+                            Text (addedItem.object)
+                            
+                        }
                     
                     
                 }
