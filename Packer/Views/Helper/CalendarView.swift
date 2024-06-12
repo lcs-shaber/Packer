@@ -35,7 +35,9 @@ struct CalendarView: View {
                     
                     List (allDays) { currentCalendar in
                         NavigationLink {
-                            CalendarDayView(day: currentCalendar)
+                            CalendarDayView(
+                                day: currentCalendar
+                            )
                         } label: {
                             CalendarListView(day: currentCalendar)
                                 .frame(height: 55)

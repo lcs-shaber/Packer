@@ -12,8 +12,13 @@ struct CalendarDayView: View {
     
     let day: Calendar
     
+    @State private var event: String = ""
+    
     // Is the sheet to add a new to-do item showing right now?
     @State var NewItemSheet = false
+    
+    //Source of truth for the added object
+    @State private var addedInput: [AddedInput] = exampleEvents
     
     // MARK: Computed properties
    
@@ -47,20 +52,35 @@ struct CalendarDayView: View {
                 }
                 
                 
-                    List (allDays){ currentCalendar in 
+                  //  List (allDays){ currentCalendar in
                         
-                        NavigationLink {
-                            AddPackingListView (day: currentCalendar)
-                        } label: {
-                            Text(day.reminders)
-                                .foregroundColor(.gray)
-                        }
+              //          NavigationLink {
+              //              AddPackingListView (day: currentCalendar)
+            //            } label: {
+             //               Text(day.reminders)
+            //                    .foregroundColor(.gray)
+             //           }
+             //       }
+                
+           //         .listStyle(.plain)
+             //       .background {
+             //           Color.clear
+            //        }
+                
+                
+                // Show the user's items
+                    List (addedInput) { addedInput in
+                        
+                      
+     
+                            Text (addedInput.event)
+                        
+                        
+                        
                     }
                 
-                    .listStyle(.plain)
-                    .background {
-                        Color.clear
-                    }
+                
+                
                 }
                 .padding()
             }
@@ -69,7 +89,9 @@ struct CalendarDayView: View {
             .sheet(
                 isPresented: $NewItemSheet
             ) {
-                Text("Hello, world!")
+                OtherNewItemView(addedInput: $addedInput
+                
+                )
                     .presentationDetents([.medium, .fraction(0.15)])
             }
             
@@ -80,6 +102,7 @@ struct CalendarDayView: View {
                 // Add a button to trigger showing the sheet
                 ToolbarItem(placement: .automatic) {
                     Button {
+                        
                         NewItemSheet = true
                     } label: {
                         Image(systemName: "plus")
