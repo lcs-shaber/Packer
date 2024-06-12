@@ -71,7 +71,7 @@ struct AddPackingListView: View {
             .sheet(
                 isPresented: $presentingNewItemSheet
             ) {
-                NewItemView(
+                NewItemView(addedItem: $addedItem
                    
                 )
                     .presentationDetents([.medium, .fraction(0.15)])

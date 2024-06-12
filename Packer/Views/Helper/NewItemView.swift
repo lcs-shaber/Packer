@@ -11,16 +11,14 @@ struct NewItemView: View {
     
     // MARK: Stored properties
     
-    @State private var object: String = ""
-    
     // What items the user has inputed
     @State var givenInput = ""
     
     // The list of items to bring
     @State var itemList: [String] = []
     
-    //Source of truth for the added object
-    @State private var addedItem: [AddedItem] = exampleObjects
+    // a refrence to the source of trueth for the parent app
+    @Binding var addedItem: [AddedItem]
     
     // MARK: Computed properties
     
@@ -35,7 +33,7 @@ struct NewItemView: View {
                 
                 //added the new object
                 let newObject = AddedItem(
-                    object: object
+                    object: givenInput
                 )
                 addedItem.append(newObject)
                 
@@ -53,7 +51,5 @@ struct NewItemView: View {
 }
 
 #Preview {
-    NewItemView(
-        
-    )
+    NewItemView(addedItem: Binding.constant(exampleObjects))
 }
