@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OtherNewItemView: View {
+struct AddCourseView: View {
     
     // MARK: Stored properties
     
@@ -15,7 +15,7 @@ struct OtherNewItemView: View {
     @State var givenEvent = ""
     
     // a refrence to the source of trueth for the parent app
-    @Binding var addedInput: [AddedInput]
+    @Binding var addedInput: [Course]
     
     // MARK: Computed properties
     
@@ -30,8 +30,8 @@ struct OtherNewItemView: View {
             Button {
                 
                 //added the new object
-                let newEvent = AddedInput(
-                    event: givenEvent
+                let newEvent = Course(
+                    name: givenEvent
                 )
                 addedInput.append(newEvent)
                 
@@ -50,5 +50,5 @@ struct OtherNewItemView: View {
 }
 
 #Preview {
-    OtherNewItemView( addedInput: Binding.constant(exampleEvents))
+    AddCourseView( addedInput: Binding.constant(exampleCourses))
 }

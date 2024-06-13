@@ -17,6 +17,8 @@ struct  Calendar: Identifiable {
     let reminders: String
     let rectangleColour2: Color
     let textColor2: Color
+    let object: String
+    let event: String
 }
     
 let monday = Calendar (
@@ -26,7 +28,9 @@ let monday = Calendar (
     reminders2: "Add a packing Item",
     reminders: "Add an event",
     rectangleColour2: Color.lightGray,
-    textColor2: .black
+    textColor2: .black,
+    object: "ruler",
+    event: "art"
 )
 
 let tuesday = Calendar (
@@ -36,7 +40,9 @@ let tuesday = Calendar (
     reminders2: "jj2",
     reminders: "kk",
     rectangleColour2: .white,
-    textColor2: .black
+    textColor2: .black,
+    object: "paper",
+    event: "econ"
 )
 
 let wednesday = Calendar (
@@ -46,7 +52,9 @@ let wednesday = Calendar (
     reminders2: "jj3",
     reminders: "kk",
     rectangleColour2: Color.lightGray,
-    textColor2: .black
+    textColor2: .black,
+    object: "computer",
+    event: "computer science"
 )
 
 let thurday = Calendar (
@@ -56,7 +64,9 @@ let thurday = Calendar (
     reminders2: "jj4",
     reminders: "kk",
     rectangleColour2: .white,
-    textColor2: .black
+    textColor2: .black,
+    object: "book",
+    event: "spanish"
 )
 
 let friday = Calendar (
@@ -66,7 +76,9 @@ let friday = Calendar (
     reminders2: "jj5",
     reminders: "kk",
     rectangleColour2: Color.lightGray,
-    textColor2: .black
+    textColor2: .black,
+    object: "charger",
+    event: "computer science"
 )
 
 let saturday = Calendar (
@@ -76,7 +88,9 @@ let saturday = Calendar (
     reminders2: "jj6",
     reminders: "kk",
     rectangleColour2: .white,
-    textColor2: .black
+    textColor2: .black,
+    object: "notebook",
+    event: "econ"
 )
 
 let sunday = Calendar (
@@ -86,7 +100,9 @@ let sunday = Calendar (
     reminders2: "jj7",
     reminders: "kk",
     rectangleColour2: Color.lightGray,
-    textColor2: .black
+    textColor2: .black,
+    object: "paint",
+    event: "art"
 )
 
 let allDays = [

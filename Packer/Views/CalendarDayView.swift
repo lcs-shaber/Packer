@@ -18,7 +18,7 @@ struct CalendarDayView: View {
     @State var NewItemSheet = false
     
     //Source of truth for the added object
-    @State private var addedInput: [AddedInput] = exampleEvents
+    @State private var courses: [Course] = exampleCourses
     
     // MARK: Computed properties
    
@@ -52,32 +52,34 @@ struct CalendarDayView: View {
                 }
                 
                 
-                  //  List (allDays){ currentCalendar in
-                        
-              //          NavigationLink {
-              //              AddPackingListView (day: currentCalendar)
-            //            } label: {
-             //               Text(day.reminders)
-            //                    .foregroundColor(.gray)
-             //           }
-             //       }
+//                    List (allDays){ currentCalendar in
+//                        
+//                        NavigationLink {
+//                            AddPackingListView (day: currentCalendar)
+//                       } label: {
+//                            Text(day.reminders)
+//                                .foregroundColor(.gray)
+//                        }
+//                   }
+//                
+//                    .listStyle(.plain)
+//                    .background {
+//                        Color.clear
+//                   }
                 
-           //         .listStyle(.plain)
-             //       .background {
-             //           Color.clear
-            //        }
                 
                 
                 // Show the user's items
-                    List (addedInput) { addedInput in
+                    List (courses) { addedInput in
                         
                       
      
-                            Text (addedInput.event)
+                            Text (addedInput.name)
                         
                         
                         
                     }
+                    .listStyle(.plain)
                 
                 
                 
@@ -89,7 +91,7 @@ struct CalendarDayView: View {
             .sheet(
                 isPresented: $NewItemSheet
             ) {
-                OtherNewItemView(addedInput: $addedInput
+                AddCourseView(addedInput: $courses
                 
                 )
                     .presentationDetents([.medium, .fraction(0.15)])
