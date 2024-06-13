@@ -7,11 +7,12 @@
 
 import SwiftUI
 
-struct AddPackingListView: View {
+struct ThingsToBringForACourseView: View {
     
     // MARK: Stored properties
     
     let day: Calendar
+    let course: Course
     
     @State private var object: String = ""
     
@@ -49,7 +50,7 @@ struct AddPackingListView: View {
                             .frame(height: 70)
                             .padding(.horizontal)
                         
-                        Text (day.reminders)
+                        Text (course.name)
                             .foregroundColor(.white)
                             .bold()
                             .font(.title)
@@ -101,5 +102,5 @@ struct AddPackingListView: View {
 }
 
 #Preview {
-    AddPackingListView( day: monday)
+    ThingsToBringForACourseView( day: monday, course: spanish)
 }

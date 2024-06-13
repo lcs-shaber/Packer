@@ -70,11 +70,21 @@ struct CalendarDayView: View {
                 
                 
                 // Show the user's items
-                    List (courses) { addedInput in
+                    List (courses) { currentCourse in
                         
                       
-     
-                            Text (addedInput.name)
+                        NavigationLink {
+                            ThingsToBringForACourseView(
+                                day: tuesday,
+                                course: currentCourse
+                            )
+                        } label: {
+                            Text (currentCourse.name)
+                        }
+
+                            
+                        
+                            
                         
                         
                         
