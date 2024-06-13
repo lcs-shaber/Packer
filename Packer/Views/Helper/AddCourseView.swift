@@ -23,7 +23,7 @@ struct AddCourseView: View {
         
         HStack{
             
-            TextField("Add an item", text: $givenEvent)
+            TextField("Add a course", text: $givenEvent)
                 .padding()
             
             
