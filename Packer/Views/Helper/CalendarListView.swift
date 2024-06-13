@@ -12,6 +12,7 @@ struct CalendarListView: View {
     // MARK: Stored properties
     
     let day: Calendar
+    let course: Course
     
     // MARK: Computed properties
     var body: some View {
@@ -35,7 +36,7 @@ struct CalendarListView: View {
                 
                 VStack (alignment: .leading) {
                     
-                    Text(day.reminders)
+                    Text(course.name)
                         .foregroundColor(day.textColor2)
                     
                     HStack {
@@ -50,6 +51,7 @@ struct CalendarListView: View {
 
 #Preview {
     CalendarListView(
-       day: monday
+       day: monday,
+       course: spanish
     )
 }

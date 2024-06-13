@@ -39,7 +39,7 @@ struct CalendarView: View {
                                 day: currentCalendar
                             )
                         } label: {
-                            CalendarListView(day: currentCalendar)
+                            CalendarListView(day: currentCalendar, course: spanish)
                                 .frame(height: 55)
                         }
                         .listRowBackground(Color.clear)
