@@ -38,6 +38,7 @@ struct ThingsToBringForACourseView: View {
                 
                 VStack {
                     
+                    //title question
                     Text("What do you need to bring?")
                         .bold()
                         .font(.title)
@@ -45,6 +46,8 @@ struct ThingsToBringForACourseView: View {
                         .padding(.bottom)
                     
                     ZStack {
+                        
+                        //class title
                         RoundedRectangle(cornerRadius: 30 )
                             .fill(Color.darkBlue)
                             .frame(height: 70)

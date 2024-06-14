@@ -24,11 +24,13 @@ struct NewItemView: View {
     
     var body: some View {
         HStack{
-            
+           
+        //text field so that you can add the item which you want to bring
             TextField("Add an item", text: $givenInput)
                 .padding()
             
-            
+         
+        //Button so you can add stuff
             Button {
                 
                 //added the new object

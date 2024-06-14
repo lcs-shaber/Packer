@@ -23,10 +23,12 @@ struct AddCourseView: View {
         
         HStack{
             
+        //textfield for adding a course
             TextField("Add a course", text: $givenEvent)
                 .padding()
             
-            
+          
+        //button to add a new object
             Button {
                 
                 //added the new object

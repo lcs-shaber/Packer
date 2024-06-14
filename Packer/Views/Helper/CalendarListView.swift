@@ -20,7 +20,8 @@ struct CalendarListView: View {
         HStack {
             
             ZStack{
-                
+              
+            //what day it is
                 Rectangle()
                     .fill(day.rectangleColour1)
                 Text(day.dayName)
@@ -30,7 +31,8 @@ struct CalendarListView: View {
             }
             
             ZStack {
-                
+              
+                //what class you have and what you need to bring to that
                 Rectangle()
                     .fill(day.rectangleColour2)
                 

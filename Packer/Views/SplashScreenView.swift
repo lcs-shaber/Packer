@@ -20,6 +20,7 @@ struct SplashScreenView: View {
         ZStack{
             
             //first layer
+            //background gradient
             RadialGradient(gradient: Gradient(colors: [.gradientYellow,.gradientOrange,.gradientPink,.gradientPurple]),
             center: .center,
             startRadius: 0, endRadius: 400)
@@ -28,6 +29,8 @@ struct SplashScreenView: View {
             VStack{
                 //second layer
                 
+               
+                //the title layer
                 HStack{
                     
                     Spacer()
@@ -41,7 +44,9 @@ struct SplashScreenView: View {
                     Spacer()
                     
                 }.padding()
-               
+             
+                
+                //the slogan layer
                 HStack{
                     
                     Spacer()
@@ -57,7 +62,8 @@ struct SplashScreenView: View {
                 }
                 
                 
-                
+              
+            //the logo
                 Image(systemName: "checkmark.circle.fill")
                     .resizable()
                     .scaledToFit()
@@ -66,7 +72,7 @@ struct SplashScreenView: View {
                     .foregroundColor(.logoPurple)
                 
               
-                
+          //the get started 'button'
                 Text ("Get Started")
                     .bold()
                     .foregroundColor(.white)

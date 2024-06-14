@@ -21,14 +21,16 @@ struct PackingDescription: View {
             
             
             HStack {
-                
+             
+           //name of the day
                 Text (day.dayName)
                     .bold()
                     .font(.title3)
                 Spacer()
                 
             }
-            
+          
+        // the item you want to bring
             Text (day.reminders2)
 
         }

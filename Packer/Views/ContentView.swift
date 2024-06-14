@@ -19,13 +19,15 @@ struct ContentView: View {
        
         //Tab bar
         TabView (selection: Binding.constant(1)) {
-            
+         
+        //the view so you can see the calendar with the upcoming events
             CalendarView()
                 .tabItem {
                     Image (systemName: "calendar")
                     Text ("Calendar")
                 } .tag (1)
-            
+         
+        //the view so you have a list for each day, where you can see what you need to bring
             PackingListView()
                 .tabItem {
                     Image (systemName: "list.bullet.clipboard")

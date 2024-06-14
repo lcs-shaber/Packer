@@ -26,7 +26,8 @@ struct PackingListView: View {
                 
                 ZStack {
                     
-                    
+             
+                //the header
                     Rectangle()
                         .fill(Color.lightGray)
                         .frame(height: 100)
@@ -39,6 +40,7 @@ struct PackingListView: View {
                 }
                 
                 
+                //a list of items for each day
                          List (allDays) { currentCalendar in
                  
                          label: do {

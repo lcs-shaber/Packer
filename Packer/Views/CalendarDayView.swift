@@ -36,6 +36,7 @@ struct CalendarDayView: View {
                 
                 ZStack {
                     
+                //day description
                     Rectangle()
                         .fill(Color.lightPurple)
                         .frame(height: 100)
@@ -51,23 +52,7 @@ struct CalendarDayView: View {
                     
                 }
                 
-                
-//                    List (allDays){ currentCalendar in
-//                        
-//                        NavigationLink {
-//                            AddPackingListView (day: currentCalendar)
-//                       } label: {
-//                            Text(day.reminders)
-//                                .foregroundColor(.gray)
-//                        }
-//                   }
-//                
-//                    .listStyle(.plain)
-//                    .background {
-//                        Color.clear
-//                   }
-                
-                
+           
                 
                 // Show the user's items
                     List (courses) { currentCourse in
@@ -82,11 +67,6 @@ struct CalendarDayView: View {
                             Text (currentCourse.name)
                         }
 
-                            
-                        
-                            
-                        
-                        
                         
                     }
                     .listStyle(.plain)
