@@ -60,7 +60,6 @@ struct CalendarDayView: View {
                       
                         NavigationLink {
                             ThingsToBringForACourseView(
-                                day: tuesday,
                                 course: currentCourse
                             )
                         } label: {

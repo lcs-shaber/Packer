@@ -11,7 +11,7 @@ struct ThingsToBringForACourseView: View {
     
     // MARK: Stored properties
     
-    let day: Calendar
+    
     let course: Course
     
     @State private var object: String = ""
@@ -105,5 +105,5 @@ struct ThingsToBringForACourseView: View {
 }
 
 #Preview {
-    ThingsToBringForACourseView( day: monday, course: spanish)
+    ThingsToBringForACourseView( course: spanish)
 }
